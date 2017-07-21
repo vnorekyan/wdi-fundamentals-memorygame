@@ -50,6 +50,15 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-family: "Raleway", sans-serif;
+  color: #0D2C40;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
 p {
   font-family: "Droid Serif", serif;
   line-height: 26px;

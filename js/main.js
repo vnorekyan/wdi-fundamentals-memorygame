@@ -21,12 +21,17 @@ var cards = [
     cardImage: "images/king-of-diamonds.png"
   }
 ];
+
+var score = 0;
+document.getElementById('score').textContent = "Score: " + score;
 var cardsInPlay = [];
 var checkForMatch = function(reference) {
   reference.setAttribute('src',cards[reference.getAttribute('data-id')].cardImage);
   if (cardsInPlay.length === 2) {
     if(cardsInPlay[0] === cardsInPlay[1]) {
       alert("You found a match!");
+      score +=1;
+      document.getElementById('score').textContent = "Score: " + score;
     } else {
       alert("Sorry, try again.");
     }
